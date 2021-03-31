@@ -1,6 +1,6 @@
 {
   "name": "@kubevious/helper-rule-engine",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Kubevious Rule Engine",
   "main": "dist/index.js",
   "types": "dist",
