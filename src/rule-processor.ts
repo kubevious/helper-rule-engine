@@ -62,12 +62,13 @@ export class RuleProcessor
 
                         let ruleItemInfo = result.ruleItems[dn];
 
-                        let ruleItem : Partial<RuleItem> = {
+                        let ruleItem : RuleItem = {
                             dn: dn,
                             errors: 0,
                             warnings: 0,
                             markers: []
                         };
+                        ruleResult.items.push(ruleItem);
 
                         let alertsToRaise : AlertInfo[] = [];
 
