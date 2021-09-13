@@ -57,25 +57,25 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.0.tgz#87de7af9c231826fdd68ac7258f77c429e0e5fcf"
   integrity sha512-wdppn25U8z/2yiaT6YGquE6X8sSv7hNMWSXYSSU1jGv/yd6XqjXgTDJ8KP4NgjTXfJ3GbRjeeb8RTV7a/VpM+w==
 
-"@kubevious/helpers@^1.0.28", "@kubevious/helpers@^1.0.57":
-  version "1.0.57"
-  resolved "https://registry.yarnpkg.com/@kubevious/helpers/-/helpers-1.0.57.tgz#17f00d17f463320bd23af64c0ae64f837d29b92e"
-  integrity sha512-baNO0/zIh1mo96eJH80+NsDIW0c0tdvtShKP2R8JXMPvWBbpVksG9AQ76LYbp24VWXXQaSOju/K98fdDYrcONQ==
+"@kubevious/helpers@^1.0.62":
+  version "1.0.62"
+  resolved "https://registry.yarnpkg.com/@kubevious/helpers/-/helpers-1.0.62.tgz#68a9079411b7ec8a1cb6a15d6d3c458f54b51ff9"
+  integrity sha512-8UleQ3aDzjH008x5FVXv5dXa6gHVA3+D8KuChgcntBwWzme8JmIbvrlbIRnUgf6ZsQSHSo26bzHl7YFicMsPyQ==
   dependencies:
     moment "^2.29.1"
     the-lodash "^2.0.9"
     the-logger "^2.0.9"
     the-promise "^2.0.13"
 
-"@kubevious/kubik@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@kubevious/kubik/-/kubik-1.0.5.tgz#f25544b17507d0d173c4ff1a2a33e83547274d79"
-  integrity sha512-bOVeQZxh5BMF0Zlls45T5pK++RJonQcrZciq/0BAHdNfl53FmPlfTLMIh2VzZae2bcgSWPAAEsODS8kmHhBw7A==
+"@kubevious/kubik@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@kubevious/kubik/-/kubik-1.0.6.tgz#ead5c2577001adff987d44e2e70251b9e6d7a3b9"
+  integrity sha512-ZCOUi9puVilHJUfiZVdLdX9W5zdRxM8Y+AXAA3bbLrgtN3LkirvxjbTgJjtd18Cyoce3JTj9HlOXKd1pfuVVqg==
   dependencies:
-    "@kubevious/helpers" "^1.0.28"
-    the-lodash "^2.0.0"
-    the-logger "^2.0.5"
-    the-promise "^2.0.3"
+    "@kubevious/helpers" "^1.0.62"
+    the-lodash "^2.0.9"
+    the-logger "^2.0.9"
+    the-promise "^2.0.13"
 
 "@types/bluebird@3.5.35":
   version "3.5.35"
@@ -1454,7 +1454,7 @@ text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
-the-lodash@^2.0.0, the-lodash@^2.0.8, the-lodash@^2.0.9:
+the-lodash@^2.0.8, the-lodash@^2.0.9:
   version "2.0.9"
   resolved "https://registry.yarnpkg.com/the-lodash/-/the-lodash-2.0.9.tgz#467bc7d2cbffbcc6a8ae546a1b0838f11114d8b5"
   integrity sha512-bZwoqCShbdhcnhck20Kx9xrNhcY0OYgqByk0z9O7g89s+kcAYrOKMdLPE9HKKPJCZHFfudJW+lcz+XUnJCZvwA==
@@ -1464,7 +1464,7 @@ the-lodash@^2.0.0, the-lodash@^2.0.8, the-lodash@^2.0.9:
     fast-json-stable-stringify "2.1.0"
     lodash "4.17.21"
 
-the-logger@^2.0.5, the-logger@^2.0.9:
+the-logger@^2.0.9:
   version "2.0.9"
   resolved "https://registry.yarnpkg.com/the-logger/-/the-logger-2.0.9.tgz#91f4dd83671543147b5542bc0fa0057b710adc8a"
   integrity sha512-XE8xbOv04kL2I+KPUh8GpzezVh6nj32HTiMBu9kO+bebjEh/fZvBM7QvN2zpnZBQTDrptOAiCLqT4dcCOuqaKQ==
@@ -1477,7 +1477,7 @@ the-logger@^2.0.5, the-logger@^2.0.9:
     the-lodash "^2.0.8"
     the-promise "^2.0.12"
 
-the-promise@^2.0.12, the-promise@^2.0.13, the-promise@^2.0.3:
+the-promise@^2.0.12, the-promise@^2.0.13:
   version "2.0.13"
   resolved "https://registry.yarnpkg.com/the-promise/-/the-promise-2.0.13.tgz#1e56f577091965b7945ba8f3938a31cce0889558"
   integrity sha512-/ZzPENiqQvD9wFkiUMefcQavhnnwKU3rnwkKLsVroR1FiOZl6OvaoFkFDNIQUesqCkvTwRAz8UHdupbX/9kPMg==
