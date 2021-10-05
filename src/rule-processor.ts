@@ -3,11 +3,10 @@ import { Promise } from 'the-promise';
 import { ILogger } from 'the-logger' ;
 
 import { ProcessingTrackerScoper } from '@kubevious/helpers/dist/processing-tracker';
-
+import { RegistryState } from '@kubevious/state-registry';
 import { RuleProcessor as KubikRuleProcessor } from '@kubevious/kubik';
-import { RuleItem, RuleObject, RuleResult } from './types';
-import { RegistryState } from '@kubevious/helpers/dist/registry-state';
 
+import { RuleItem, RuleObject, RuleResult } from './types';
 
 export class RuleProcessor
 {
@@ -82,7 +81,7 @@ export class RuleProcessor
                                 {
                                     alertsToRaise.push({ 
                                         severity: 'error',
-                                        message:  'Rule ' + rule.name + ' failed. ' + msg
+                                        message:  `Rule ${rule.name} failed. ${msg}`
                                     });
                                 }
                             }
@@ -91,7 +90,7 @@ export class RuleProcessor
                                 ruleItem.errors = 1;
                                 alertsToRaise.push({ 
                                     severity: 'error',
-                                    message:  'Rule ' + rule.name + ' failed.'
+                                    message:  `Rule ${rule.name} failed.`
                                 });
                             }
                         }
@@ -105,7 +104,7 @@ export class RuleProcessor
                                 {
                                     alertsToRaise.push({ 
                                         severity: 'warn',
-                                        message:  'Rule ' + rule.name + ' failed. ' + msg
+                                        message:  `Rule ${rule.name} failed. ${msg}`
                                     });
                                 }
                             }

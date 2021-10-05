@@ -1,5 +1,5 @@
 import { ProcessingTracker } from '@kubevious/helpers/dist/processing-tracker';
-import { RegistryState } from '@kubevious/helpers/dist/registry-state';
+import { RegistryState } from '@kubevious/state-registry';
 import 'mocha';
 import should = require('should');
 

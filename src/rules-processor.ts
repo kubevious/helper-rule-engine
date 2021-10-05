@@ -3,11 +3,10 @@ import { Promise } from 'the-promise';
 import { ILogger } from 'the-logger' ;
 
 import { ProcessingTrackerScoper } from '@kubevious/helpers/dist/processing-tracker';
+import { RegistryState } from '@kubevious/state-registry';
 
 import { RuleProcessor } from './rule-processor';
-import { ExecutionContext, RuleItem, RuleObject, RuleResult } from './types';
-import { RegistryState } from '@kubevious/helpers/dist/registry-state';
-
+import { ExecutionContext, RuleObject } from './types';
 
 export class RulesProcessor
 {
@@ -71,10 +70,4 @@ export class RulesProcessor
             })
     }
 
-}
-
-
-interface AlertInfo {
-    severity: string,
-    message: string
 }
