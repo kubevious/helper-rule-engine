@@ -29,7 +29,7 @@ export class RulesProcessor
             state.date.toISOString(),
             state.getCount())
 
-        let executionContext : ExecutionContext = {
+        const executionContext : ExecutionContext = {
             rules: {},
             markers: {}
         }
@@ -56,7 +56,7 @@ export class RulesProcessor
             .then(ruleResult => {
                 executionContext.rules[rule.name] = ruleResult;
 
-                for(let markerResult of _.values(ruleResult.markers))
+                for(const markerResult of _.values(ruleResult.markers))
                 {
                     if (!executionContext.markers[markerResult.name]) {
                         executionContext.markers[markerResult.name] = {

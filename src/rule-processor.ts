@@ -7,6 +7,7 @@ import { RegistryState } from '@kubevious/state-registry';
 import { RuleProcessor as KubikRuleProcessor } from '@kubevious/kubik';
 
 import { RuleItem, RuleObject, RuleResult } from './types';
+import { AlertSourceKind } from '@kubevious/state-registry/dist/types/alert';
 
 export class RuleProcessor
 {
@@ -47,7 +48,7 @@ export class RuleProcessor
             logs: []
         };
 
-        let processor = new KubikRuleProcessor(state, rule);
+        const processor = new KubikRuleProcessor(state, rule);
         return processor.process()
             .then((result) => {
                 this.logger.silly('[_processRule] RESULT: ', result);
@@ -55,13 +56,13 @@ export class RuleProcessor
 
                 if (result.success)
                 {
-                    for(let dn of _.keys(result.ruleItems))
+                    for(const dn of _.keys(result.ruleItems))
                     {
                         this.logger.debug('[_processRule] RuleItem: %s', dn);
 
-                        let ruleItemInfo = result.ruleItems[dn];
+                        const ruleItemInfo = result.ruleItems[dn];
 
-                        let ruleItem : RuleItem = {
+                        const ruleItem : RuleItem = {
                             dn: dn,
                             errors: 0,
                             warnings: 0,
@@ -69,7 +70,7 @@ export class RuleProcessor
                         };
                         ruleResult.items.push(ruleItem);
 
-                        let alertsToRaise : AlertInfo[] = [];
+                        const alertsToRaise : AlertInfo[] = [];
 
                         if (ruleItemInfo.errors) {
 
@@ -77,7 +78,7 @@ export class RuleProcessor
                                 ruleItemInfo.errors.messages.length > 0)
                             {
                                 ruleItem.errors = ruleItemInfo.errors.messages.length;
-                                for(let msg of ruleItemInfo.errors.messages)
+                                for(const msg of ruleItemInfo.errors.messages)
                                 {
                                     alertsToRaise.push({ 
                                         severity: 'error',
@@ -100,7 +101,7 @@ export class RuleProcessor
                                 ruleItemInfo.warnings.messages.length > 0)
                             {
                                 ruleItem.warnings = ruleItemInfo.warnings.messages.length;
-                                for(let msg of ruleItemInfo.warnings.messages)
+                                for(const msg of ruleItemInfo.warnings.messages)
                                 {
                                     alertsToRaise.push({ 
                                         severity: 'warn',
@@ -118,14 +119,14 @@ export class RuleProcessor
                             }
                         }
 
-                        for(let alertInfo of alertsToRaise)
+                        for(const alertInfo of alertsToRaise)
                         {
                             state.raiseAlert(dn, {
                                 id: 'rule-' + rule.name,
                                 severity: alertInfo.severity,
                                 msg: alertInfo.message,
                                 source: {
-                                    kind: 'rule',
+                                    kind: AlertSourceKind.rule,
                                     id: rule.name
                                 }
                             });
@@ -133,7 +134,7 @@ export class RuleProcessor
 
                         if (ruleItemInfo.marks)
                         {
-                            for(let marker of _.keys(ruleItemInfo.marks))
+                            for(const marker of _.keys(ruleItemInfo.marks))
                             {
                                 state.raiseMarker(dn, marker);
 
@@ -155,7 +156,7 @@ export class RuleProcessor
                 {
                     this.logger.error('[_processRule] Failed: ', result.messages);
 
-                    for(let msg of result.messages)
+                    for(const msg of result.messages)
                     {
                         ruleResult.logs.push({
                             kind: 'error',
