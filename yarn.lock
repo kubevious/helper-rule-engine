@@ -52,10 +52,17 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.0.tgz#87de7af9c231826fdd68ac7258f77c429e0e5fcf"
   integrity sha512-wdppn25U8z/2yiaT6YGquE6X8sSv7hNMWSXYSSU1jGv/yd6XqjXgTDJ8KP4NgjTXfJ3GbRjeeb8RTV7a/VpM+w==
 
-"@kubevious/entity-meta@^1.0.34", "@kubevious/entity-meta@^1.0.41":
+"@kubevious/entity-meta@^1.0.41":
   version "1.0.41"
   resolved "https://registry.yarnpkg.com/@kubevious/entity-meta/-/entity-meta-1.0.41.tgz#609bf0c02dcab2011bbd950a8a6ab5e5e062bfee"
   integrity sha512-EoOtDqAWwTOfDqFQJdkv8eX73mQ2FlZsQeq80D0uK3ETm6dbJGNpW+iwj35P/67dCRJNCIZKZ7jhwq9iHqm7rw==
+  dependencies:
+    the-lodash "^2.0.9"
+
+"@kubevious/entity-meta@^1.0.45":
+  version "1.0.45"
+  resolved "https://registry.yarnpkg.com/@kubevious/entity-meta/-/entity-meta-1.0.45.tgz#0c71c459a38ec5e490be07f9587d954767a90cf5"
+  integrity sha512-0kRcYwJjzIL3/TUDOa1GJ6F6KgONuluqa1sOhbB8CTZAAeqHBDDRbxcQ90Ax+0DhfELSPtCXRbQQHePO5uX8Ew==
   dependencies:
     the-lodash "^2.0.9"
 
@@ -80,14 +87,14 @@
     the-logger "^2.0.14"
     the-promise "^2.0.13"
 
-"@kubevious/state-registry@^1.0.11":
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/@kubevious/state-registry/-/state-registry-1.0.11.tgz#22b1e9ae42cb206339e87d84ee5681ddd38916c5"
-  integrity sha512-uiNpYq+5MyTfkMKhf4sVCOVwmGkHyA6Mr3G4oWQ4+MaPgEw/1WDl/ppCwhfHhmlUPCQd2kut4FW1BVUWk61wzQ==
+"@kubevious/state-registry@^1.0.11", "@kubevious/state-registry@^1.0.13":
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/@kubevious/state-registry/-/state-registry-1.0.13.tgz#4f3be47aa34410cb5c0a2fcbe1baccfe01e466d1"
+  integrity sha512-j+A9Qb1PQ8NIBYnBW0TclPbvbf6g3rsbaFA8ZmT2bcfZQEqEFUpzbV2cr59nBiexHJ8kCkAoRVCxf/gzj4fJfg==
   dependencies:
-    "@kubevious/entity-meta" "^1.0.34"
+    "@kubevious/entity-meta" "^1.0.45"
     the-lodash "^2.0.9"
-    the-logger "^2.0.10"
+    the-logger "^2.0.14"
     the-promise "^2.0.13"
 
 "@types/bluebird@3.5.35":
@@ -1493,7 +1500,7 @@ the-lodash@^2.0.9:
     fast-json-stable-stringify "2.1.0"
     lodash "4.17.21"
 
-the-logger@^2.0.10, the-logger@^2.0.14, the-logger@^2.0.9:
+the-logger@^2.0.14, the-logger@^2.0.9:
   version "2.0.14"
   resolved "https://registry.yarnpkg.com/the-logger/-/the-logger-2.0.14.tgz#c07e5ac25b0b59bb615f3c05bc34b86cabfe54bd"
   integrity sha512-K0LJdZl+Q864Tqy8p0iql6pYqvm4cp6UCZ6MakEnHZQxhWuXxFDu0nNiY4i+O+b6I0IXXqMSYBP1furkD1xauQ==
