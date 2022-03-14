@@ -52,17 +52,17 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.0.tgz#87de7af9c231826fdd68ac7258f77c429e0e5fcf"
   integrity sha512-wdppn25U8z/2yiaT6YGquE6X8sSv7hNMWSXYSSU1jGv/yd6XqjXgTDJ8KP4NgjTXfJ3GbRjeeb8RTV7a/VpM+w==
 
-"@kubevious/entity-meta@^1.0.41":
-  version "1.0.41"
-  resolved "https://registry.yarnpkg.com/@kubevious/entity-meta/-/entity-meta-1.0.41.tgz#609bf0c02dcab2011bbd950a8a6ab5e5e062bfee"
-  integrity sha512-EoOtDqAWwTOfDqFQJdkv8eX73mQ2FlZsQeq80D0uK3ETm6dbJGNpW+iwj35P/67dCRJNCIZKZ7jhwq9iHqm7rw==
-  dependencies:
-    the-lodash "^2.0.9"
-
 "@kubevious/entity-meta@^1.0.45":
   version "1.0.45"
   resolved "https://registry.yarnpkg.com/@kubevious/entity-meta/-/entity-meta-1.0.45.tgz#0c71c459a38ec5e490be07f9587d954767a90cf5"
   integrity sha512-0kRcYwJjzIL3/TUDOa1GJ6F6KgONuluqa1sOhbB8CTZAAeqHBDDRbxcQ90Ax+0DhfELSPtCXRbQQHePO5uX8Ew==
+  dependencies:
+    the-lodash "^2.0.9"
+
+"@kubevious/entity-meta@^1.0.51":
+  version "1.0.51"
+  resolved "https://registry.yarnpkg.com/@kubevious/entity-meta/-/entity-meta-1.0.51.tgz#880ed1199796b2a3649963c12c359274c1ec5819"
+  integrity sha512-KqgFXqWwKxYIKln831j9nkPDrhBab1QFP1VghfBWbJvC4qfigq5MvThlDU+bHEaTkaOS9A7PUlFWOeegePWb2g==
   dependencies:
     the-lodash "^2.0.9"
 
@@ -76,18 +76,18 @@
     the-logger "^2.0.9"
     the-promise "^2.0.13"
 
-"@kubevious/kubik@^1.0.11":
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/@kubevious/kubik/-/kubik-1.0.11.tgz#4bc73a6d8fc9dc8c7970fd5efaf78793b7630c6a"
-  integrity sha512-h+ykWQ8vus2YzKwGOBJ9Hox9MXQ3Ry6GlzFBSEsu9tgx41ycyRT2YGtTklLZvvyoDEUNTC0dxCL8O6drVIDYzA==
+"@kubevious/kubik@^1.0.12":
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/@kubevious/kubik/-/kubik-1.0.12.tgz#4734ba8df1e0ecb0c275682e93fef95e86d86ca9"
+  integrity sha512-CB24OFO2vHQ+/9rGAJfkV43VjWyn/BIeX4wAPVortPieLegsbPuzI3NGTFY//ODkWGdHBGhSx0qqKn3Uc/81MA==
   dependencies:
-    "@kubevious/entity-meta" "^1.0.41"
-    "@kubevious/state-registry" "^1.0.11"
+    "@kubevious/entity-meta" "^1.0.51"
+    "@kubevious/state-registry" "^1.0.13"
     the-lodash "^2.0.9"
     the-logger "^2.0.14"
     the-promise "^2.0.13"
 
-"@kubevious/state-registry@^1.0.11", "@kubevious/state-registry@^1.0.13":
+"@kubevious/state-registry@^1.0.13":
   version "1.0.13"
   resolved "https://registry.yarnpkg.com/@kubevious/state-registry/-/state-registry-1.0.13.tgz#4f3be47aa34410cb5c0a2fcbe1baccfe01e466d1"
   integrity sha512-j+A9Qb1PQ8NIBYnBW0TclPbvbf6g3rsbaFA8ZmT2bcfZQEqEFUpzbV2cr59nBiexHJ8kCkAoRVCxf/gzj4fJfg==
