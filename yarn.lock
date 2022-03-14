@@ -76,10 +76,10 @@
     the-logger "^2.0.9"
     the-promise "^2.0.13"
 
-"@kubevious/kubik@^1.0.12":
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/@kubevious/kubik/-/kubik-1.0.12.tgz#4734ba8df1e0ecb0c275682e93fef95e86d86ca9"
-  integrity sha512-CB24OFO2vHQ+/9rGAJfkV43VjWyn/BIeX4wAPVortPieLegsbPuzI3NGTFY//ODkWGdHBGhSx0qqKn3Uc/81MA==
+"@kubevious/kubik@^1.0.13":
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/@kubevious/kubik/-/kubik-1.0.13.tgz#403169f1bd1ba80706a67607325fab53ade76be0"
+  integrity sha512-Hcw9J/9YlRHn5e8X5yGwqLbrOR7ursw8bQS9NEyLkXkk5kQnFT0hzAakMbG4bPtrGAcLrvhITcdZbyAxR2BUuQ==
   dependencies:
     "@kubevious/entity-meta" "^1.0.51"
     "@kubevious/state-registry" "^1.0.13"
