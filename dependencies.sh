@@ -15,4 +15,5 @@ FORCE_RESOLVE_DEPENDENCIES=(
     "the-promise"
     "@kubevious/helpers"
     "@kubevious/state-registry"
+    "@kubevious/kubik"
 )

@@ -59,10 +59,10 @@
   dependencies:
     the-lodash "^2.0.9"
 
-"@kubevious/entity-meta@^1.0.51":
-  version "1.0.51"
-  resolved "https://registry.yarnpkg.com/@kubevious/entity-meta/-/entity-meta-1.0.51.tgz#880ed1199796b2a3649963c12c359274c1ec5819"
-  integrity sha512-KqgFXqWwKxYIKln831j9nkPDrhBab1QFP1VghfBWbJvC4qfigq5MvThlDU+bHEaTkaOS9A7PUlFWOeegePWb2g==
+"@kubevious/entity-meta@^1.0.55":
+  version "1.0.55"
+  resolved "https://registry.yarnpkg.com/@kubevious/entity-meta/-/entity-meta-1.0.55.tgz#9889afa89b3a2527b4f74911ce4374d66189ab41"
+  integrity sha512-3TpoPWjvlW68o8g9UpDj8tFzZUWIxldu26OXek8DJ7AIxPdOqRWkcVunSjs0Tu9UBKVGzfCOtxJ17ckgEiipeg==
   dependencies:
     the-lodash "^2.0.9"
 
@@ -76,12 +76,12 @@
     the-logger "^2.0.9"
     the-promise "^2.0.13"
 
-"@kubevious/kubik@^1.0.13":
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/@kubevious/kubik/-/kubik-1.0.13.tgz#403169f1bd1ba80706a67607325fab53ade76be0"
-  integrity sha512-Hcw9J/9YlRHn5e8X5yGwqLbrOR7ursw8bQS9NEyLkXkk5kQnFT0hzAakMbG4bPtrGAcLrvhITcdZbyAxR2BUuQ==
+"@kubevious/kubik@^1.0.14":
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/@kubevious/kubik/-/kubik-1.0.14.tgz#271e49a9cffb33a1ff077d0d7069a9954f30aa0b"
+  integrity sha512-FI5erlcv8imr7xqkEq41c+PrEQa5eHNOBswHpQrJoLKGO6LVBbV8VtCHVdsUnxZQGAKG6+VUc7HVvFi8Jtywzw==
   dependencies:
-    "@kubevious/entity-meta" "^1.0.51"
+    "@kubevious/entity-meta" "^1.0.55"
     "@kubevious/state-registry" "^1.0.13"
     the-lodash "^2.0.9"
     the-logger "^2.0.14"
