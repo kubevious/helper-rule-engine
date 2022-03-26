@@ -23,7 +23,7 @@ export interface RuleResult
     items: RuleItem[],
     logs: RuleLog[],
     markers: Record<string, MarkerResult>, 
-    error_count: 0;
+    error_count: number;
 }
 
 export interface MarkerResult
