@@ -2,7 +2,7 @@ import _ from 'the-lodash';
 import { Promise } from 'the-promise';
 import { ILogger } from 'the-logger' ;
 
-import { ProcessingTrackerScoper } from '@kubevious/helpers/dist/processing-tracker';
+import { ProcessingTrackerScoper } from '@kubevious/helper-backend';
 import { RegistryState } from '@kubevious/state-registry';
 import { RuleProcessor as KubikRuleProcessor } from '@kubevious/kubik';
 

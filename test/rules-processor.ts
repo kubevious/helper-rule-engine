@@ -1,4 +1,4 @@
-import { ProcessingTracker } from '@kubevious/helpers/dist/processing-tracker';
+import { ProcessingTracker, TimerScheduler } from '@kubevious/helper-backend';
 import { RegistryState } from '@kubevious/state-registry';
 import 'mocha';
 import should = require('should');
@@ -9,7 +9,7 @@ const logger = setupLogger('test', loggerOptions);
 
 import { RulesProcessor } from '../src';
 
-const tracker = new ProcessingTracker(logger);
+const tracker = new ProcessingTracker(logger, new TimerScheduler(logger));
 
 describe('rules-processor', () => {
 
