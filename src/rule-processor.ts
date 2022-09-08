@@ -95,7 +95,8 @@ export class RuleProcessor
                                 });
                             }
                         }
-                        else if (ruleItemInfo.warnings)
+                        
+                        if (ruleItemInfo.warnings)
                         {
                             if (ruleItemInfo.warnings.messages && 
                                 ruleItemInfo.warnings.messages.length > 0)
@@ -134,7 +135,7 @@ export class RuleProcessor
 
                         if (ruleItemInfo.marks)
                         {
-                            for(const marker of _.keys(ruleItemInfo.marks))
+                            for(const marker of ruleItemInfo.marks)
                             {
                                 state.raiseMarker(dn, marker);
 

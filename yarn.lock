@@ -93,10 +93,10 @@
     the-promise "^2.0.13"
     uuid "^8.3.0"
 
-"@kubevious/kubik@^1.0.21":
-  version "1.0.21"
-  resolved "https://registry.yarnpkg.com/@kubevious/kubik/-/kubik-1.0.21.tgz#77cd81a7bd6f8f2c08d40c2e30d9c6da4c42379b"
-  integrity sha512-qdPHh8dV4bpPFgEdqMqmhQCp1tmxXSswpw+WGhFmIq0WO85grSlDKc46VJaMsvSbLdwLL7PKx2tZ88lTQqouYg==
+"@kubevious/kubik@^1.0.22":
+  version "1.0.22"
+  resolved "https://registry.yarnpkg.com/@kubevious/kubik/-/kubik-1.0.22.tgz#b116d333cc86c2aa332757728b95251e6b79f251"
+  integrity sha512-Ppqke5raQr8w9881zkTnlaIz2bvOtQ2TyYih2DgIK8sDzL/+IXj95KTx6ZhfTcoCzyc8MfGKwkWpdQxmcph4Rw==
   dependencies:
     "@kubevious/entity-meta" "^1.0.74"
     "@kubevious/state-registry" "^1.0.13"
