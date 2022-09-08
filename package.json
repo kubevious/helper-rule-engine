@@ -18,7 +18,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "@kubevious/helper-backend": "^1.0.38",
-    "@kubevious/kubik": "^1.0.15",
+    "@kubevious/kubik": "^1.0.19",
     "@kubevious/state-registry": "^1.0.13",
     "the-lodash": "^2.0.9",
     "the-logger": "^2.0.14",
@@ -42,7 +42,7 @@
     "the-logger": "^2.0.14",
     "the-promise": "^2.0.15",
     "@kubevious/state-registry": "^1.0.13",
-    "@kubevious/kubik": "^1.0.15",
+    "@kubevious/kubik": "^1.0.19",
     "@kubevious/helper-backend": "^1.0.38"
   }
 }
