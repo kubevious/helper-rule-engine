@@ -1,7 +1,7 @@
 import { ProcessingTracker, TimerScheduler } from '@kubevious/helper-backend';
 import { RegistryState } from '@kubevious/state-registry';
 import 'mocha';
-import should = require('should');
+import should from 'should';
 
 import { setupLogger, LoggerOptions } from 'the-logger';
 const loggerOptions = new LoggerOptions().enableFile(false).pretty(true);

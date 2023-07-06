@@ -1,5 +1,4 @@
 import _ from 'the-lodash';
-import { Promise } from 'the-promise';
 import { ILogger } from 'the-logger' ;
 
 import { ProcessingTrackerScoper } from '@kubevious/helper-backend';
@@ -7,6 +6,7 @@ import { RegistryState } from '@kubevious/state-registry';
 
 import { RuleProcessor } from './rule-processor';
 import { ExecutionContext, RuleObject } from './types';
+import { MyPromise } from 'the-promise';
 
 export class RulesProcessor
 {
@@ -42,7 +42,7 @@ export class RulesProcessor
 
     private _processRules(state : RegistryState, executionContext : ExecutionContext, tracker: ProcessingTrackerScoper)
     {
-        return Promise.serial(this._rules, x => {
+        return MyPromise.serial(this._rules, x => {
 
             return this._processRule(state, x, executionContext, tracker);
 
