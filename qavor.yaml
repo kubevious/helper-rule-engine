@@ -1,0 +1,3 @@
+kind: service
+name: helper-rule-engine
+description: helper-rule-engine
